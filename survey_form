@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Form</title>
+<style>
+body{
+  background-color:#f5e6ff;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #6666ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #6666ff;
+}
+
+div {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+div.begin{
+  border-top: 10px solid #1a75ff;
+}
+</style>
+</head>
+<body>
+<form>
+<div class = "begin">
+<h1>College Survey Form</h1>
+<p><font color = "red">*Required</font></p>
+<p></p>
+</div><br>
+<div>
+<label for="staff_method">Are you satisfied with the teaching staff and their teaching methods?</label>
+<br>
+<select id="staff_method" name="staff_method" required>
+<option value="">-Choose-</option>
+<option value="Extremely satisfied">Extremely satisfied</option>
+<option value="Very satisfied">Very satisfied</option>
+<option value="Satisfied">Satisfied</option>
+<option value="Neutral">Neutral</option>
+<option value="Dissatisfied">Dissatisfied</option>
+<option value="Very dissatisfied">Very dissatisfied</option>
+<option value="Extremely dissatisfied">Extremely dissatisfied</option>
+</select>
+</div><br>
+<div>
+<label for="facilities">How satisfied are you with the facilities provided by the college?</label>
+<br>
+<select id="facilities" name="facilities" required>
+<option value="">-Choose-</option>
+<option value="Extremely satisfied">Extremely satisfied</option>
+<option value="Very satisfied">Very satisfied</option>
+<option value="Satisfied">Satisfied</option>
+<option value="Neutral">Neutral</option>
+<option value="Dissatisfied">Dissatisfied</option>
+<option value="Very dissatisfied">Very dissatisfied</option>
+<option value="Extremely dissatisfied">Extremely dissatisfied</option>
+</select>
+</div><br>
+<div>
+<label for="diff_courses">Do you feel it is easier to register for different courses within the college?</label>
+<br>
+<select id="diff_courses" name="diff_courses" required>
+<option value="">-Choose-</option>
+<option value="Extremely satisfied">Extremely satisfied</option>
+<option value="Very satisfied">Very satisfied</option>
+<option value="Satisfied">Satisfied</option>
+<option value="Neutral">Neutral</option>
+<option value="Dissatisfied">Dissatisfied</option>
+<option value="Very dissatisfied">Very dissatisfied</option>
+<option value="Extremely dissatisfied">Extremely dissatisfied</option>
+</select>
+</div><br>
+<div>
+<label for="cleanliness_food">How satisfied are you with the cleanliness and variety of food items available in the cafeteria?</label>
+<br>
+<select id="cleanliness_food" name="cleanliness_food" required>
+<option value="">-Choose-</option>
+<option value="Extremely satisfied">Extremely satisfied</option>
+<option value="Very satisfied">Very satisfied</option>
+<option value="Satisfied">Satisfied</option>
+<option value="Neutral">Neutral</option>
+<option value="Dissatisfied">Dissatisfied</option>
+<option value="Very dissatisfied">Very dissatisfied</option>
+<option value="Extremely dissatisfied">Extremely dissatisfied</option>
+</select>
+</div><br>
+<div>
+<label for = "hostel_crowd">What do you think of the hostel?</label>
+<br>
+<select id = "hostel_crowd" name = "hostel_crowd" required>
+<option value="">-Choose-</option>
+<option value="Extremely crowded">Extremely crowded</option>
+<option value="Very crowded">Very crowded</option>
+<option value="Somewhat crowded">Somewhat crowded</option>
+<option value="Not so crowded">Not so crowded</option>
+<option value="Not at all crowded">Not at all crowded</option>
+</select>
+</div><br>
+<div>
+<label for = "extracurricular">What do you think about extracurricular activities?</label>
+<br>
+<select id = "extracurricular" name = "extracurricular" required>
+<option value="">-Choose-</option>
+<option value="They are too few">They are too few</option>
+<option value="They are just right">They are just right</option>
+<option value="I was overwhelmed with the number">I was overwhelmed with the number</option>
+</select>
+</div><br>
+<div>
+<label for = "coll_lib">Was it easy to obtain the necessary resources from the college library?</label>
+<br>
+<select id = "coll_lib" name = "coll_lib" required>
+<option value="">-Choose-</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+</div><br>
+<div>
+<label for = "feedback">Please provide us with additional feedback on areas that need improvement</label>
+<br>
+<textarea id = "feedback" name = "comments" cols = "100%" rows = "6" required></textarea>
+</div>
+<input type = "submit" value="Submit">
+</form>
+</body>
+</html>
